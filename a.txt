@@ -1,0 +1,7 @@
+//保存用户数据
+    @RequestMapping("/update")
+    public String update(User user){
+        userService.update(user.getId(),user);
+        //跳转到列表页
+        return "redirect:/";
+    }
